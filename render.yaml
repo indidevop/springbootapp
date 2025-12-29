@@ -1,7 +1,7 @@
 services:
   - type: web
     name: springbootapp
-    env: java
+    runtime: java
     javaVersion: 17
     plan: free
     buildCommand: ./mvnw clean package -DskipTests
