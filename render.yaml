@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: springbootapp
+    env: java
+    javaVersion: 17
+    plan: free
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/springbootapp-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: PORT
+        value: 8080

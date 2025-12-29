@@ -1,0 +1,18 @@
+.correct-answer {
+  color: #0f9d58; /* green */
+  font-weight: 600;
+}
+
+.wrong-answer {
+  color: #d93025; /* red */
+  font-weight: 600;
+}
+
+/* Make the label text stand out even when the radio is disabled */
+.form-check-input[disabled] + .form-check-label.correct-answer {
+  color: #0f9d58;
+}
+
+.form-check-input[disabled] + .form-check-label.wrong-answer {
+  color: #d93025;
+}
